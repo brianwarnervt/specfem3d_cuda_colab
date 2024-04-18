@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 echo "running example: `date`"
 currentdir=`pwd`
@@ -33,13 +33,13 @@ echo
 echo
 echo "  running database generation on $NPROC processors..."
 echo
-mpirun -np $NPROC ./bin/xgenerate_databases
+./bin/xgenerate_databases
 
 # runs simulation
 echo
 echo "  running solver on $NPROC processors..."
 echo
-mpirun -np $NPROC ./bin/xspecfem3D
+./bin/xspecfem3D
 
 echo
 echo "see results in directory: OUTPUT_FILES/"
