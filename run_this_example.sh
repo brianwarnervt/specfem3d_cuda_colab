@@ -13,6 +13,7 @@ rm -f -r OUTPUT_FILES
 mkdir -p bin
 mkdir -p OUTPUT_FILES
 mkdir -p OUTPUT_FILES/DATABASES_MPI
+chmod 0777 ./bin/*
 
 # stores setup
 cp DATA/Par_file OUTPUT_FILES/
